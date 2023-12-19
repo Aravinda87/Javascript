@@ -12,52 +12,22 @@
   </style>
 </head>
 <body>
-    <h1 class="text-center py-5 text-white display-4 bg-danger border-bottom border-inf">JAVASCRIPT</h1>
+    <h1 class="text-center py-5 text-white display-4 bg-success border-bottom">JAVASCRIPT</h1>
     <div class="container">
          <div class="row">
-        <div class="col"><p id="demo" class="mx-5 my-2 text-center display-6"></p></div>
+           
+        <div class="col text-center">
+            <h1>value :</h1>
+            <p id="demo" class="mx-5 my-2    display-6"></p>
+        </div>
 
     </div>
-    </div>
-   
-    
+    </div> 
     <script>
+        let text = Number.MIN_VALUE;
+        document.getElementById("demo").innerHTML = text ;
         
-        //JavaScript Can Change HTML Content
-        // JavaScript Can Change HTML Attribute Values
-        // JavaScript Can Change HTML Styles (CSS)
-        // JavaScript Can Hide HTML Elements
-        // JavaScript Can Show HTML Elements
-
-
-        // Writing into an HTML element, using innerHTML.
-        // Writing into the HTML output using document.write().
-        // Writing into an alert box, using window.alert().
-        // Writing into the browser console, using console.log().
-
-        // document.write("hello")
-        // window.alert(5 + 6)
-        // console.log(5 + 6);
-
-        function summ(a,b)
-        {
-            return a*b;
-        }
-        let x = summ(2,3)
-
-        document.getElementById("demo").innerHTML = x;
         
-        let person = {
-            lastname : "T R"
-            ,firstname : "aravinda"
-            ,fullname : function(){
-                return this.firstname + " " + this.lastname ; 
-            }
-        };
-let name = person.fullname();
-
-        document.getElementById("demo").innerHTML = "hello what the f****";
-
     </script>
 </body>
 </html>
