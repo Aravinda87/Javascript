@@ -1,15 +1,11 @@
+//sets 
 
-        // let text = ["aravinda "," rajashree "," sahana"];
-        // document.getElementById("demo").innerHTML = text ;
+const letters = new Set(["a","b","c","d","e","f"]);
 
-        // function myfunction(){
-        //     return "hello" ;
-        // }
+let text = "";
+letters.forEach(function(value){
+        text += value + "<br>";
+})
 
-        let cars = new Array("aravinda "," rajashree ", 46);
-        let text = " ";
-        for(let i = 0; i < cars.length; i++ )
-        {
-            text += cars[i] ;
-        }
-        document.getElementById("demo").innerHTML = text ;
+document.getElementById("demo").innerHTML = text ;
+
