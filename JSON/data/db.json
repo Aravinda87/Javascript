@@ -1,0 +1,52 @@
+{
+  "posts": [
+    {
+      "title": "CREATE A NEW BLOG",
+      "body": "CREATE A NEW BLOG",
+      "likes": 0,
+      "id": 1
+    },
+    {
+      "title": "CREATE A NEW BLOG",
+      "body": "CREATE A NEW BLOG",
+      "likes": 0,
+      "id": 9
+    },
+    {
+      "title": "CREATE A NEW BLOG",
+      "body": "CREATE A NEW BLOG",
+      "likes": 0,
+      "id": 8
+    },
+    {
+      "title": "CREATE A NEW BLOG",
+      "body": "CREATE A NEW BLOG",
+      "likes": 0,
+      "id": 7
+    },
+    {
+      "title": "CREATE A NEW BLOG",
+      "body": "CREATE A NEW BLOG",
+      "likes": 0,
+      "id": 5
+    },
+    {
+      "title": "CREATE A NEW BLOG",
+      "body": "CREATE A NEW BLOG",
+      "likes": 0,
+      "id": 4
+    },
+    {
+      "title": "CREATE A NEW BLOG",
+      "body": "CREATE A NEW BLOG",
+      "likes": 0,
+      "id": 3
+    },
+    {
+      "title": "http://127.0.0.1:5500/JSON/create.html",
+      "body": "http://127.0.0.1:5500/JSON/create.html",
+      "likes": 0,
+      "id": 10
+    }
+  ]
+}
