@@ -21,6 +21,8 @@ import ClickCount from './components/ClickCount'
 import HoverCount from './components/HoverCount'
 import { Userprovider } from './components/UserComponent'
 import ComponentC from './components/ComponentC'
+import Https from './components/Https'
+import PostReq from './components/PostReq'
 
 export class App extends Component {
 
@@ -67,10 +69,11 @@ export class App extends Component {
            )}
           /> */}
         
-        <Userprovider value ="aru">
+        {/* <Userprovider value ="aru">
           <ComponentC /> 
-        </Userprovider>
-
+        </Userprovider> */}
+        {/* <Https /> */}
+        <PostReq /> 
       </div>
     )
   }
