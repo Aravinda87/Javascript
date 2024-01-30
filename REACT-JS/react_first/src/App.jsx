@@ -16,6 +16,11 @@ import Hero from './components/Hero'
 import ErrorBoundry from './components/ErrorBoundry'
 import Clickcounter from './components/Clickcounter'
 import Hovercounter from './components/Hovercounter'
+import ClickCounterTwo from './components/ClickCounterTwo'
+import ClickCount from './components/ClickCount'
+import HoverCount from './components/HoverCount'
+import { Userprovider } from './components/UserComponent'
+import ComponentC from './components/ComponentC'
 
 export class App extends Component {
 
@@ -49,9 +54,23 @@ export class App extends Component {
         <ErrorBoundry>
         <Hero heroname={'superman'} />
         </ErrorBoundry> */}
-        <Clickcounter />
-        <Hovercounter />
+        {/* <Clickcounter /> */}
+        {/* <Hovercounter /> */}
+        {/* <ClickCounterTwo
+         render = {(count,increment) => (
+           <ClickCount count={count} increment={increment}/>
+           )}
+          /> */}
+          {/* <ClickCounterTwo
+         render = {(count,increment) => (
+           <HoverCount count={count} increment={increment}/>
+           )}
+          /> */}
         
+        <Userprovider value ="aru">
+          <ComponentC /> 
+        </Userprovider>
+
       </div>
     )
   }
