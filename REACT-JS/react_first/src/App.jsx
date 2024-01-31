@@ -73,7 +73,7 @@ export class App extends Component {
           <ComponentC /> 
         </Userprovider> */}
         {/* <Https /> */}
-        <PostReq /> 
+        {/* <PostReq />  */}
       </div>
     )
   }
