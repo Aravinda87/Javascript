@@ -15,6 +15,9 @@ import DataFetchOne from './components/DataFetchOne'
 import DataFetchTwo from './components/DataFetchTwo'
 import DocTitleOne from './components/DocTitleOne'
 import DocTitleTwo from './components/DocTitleTwo'
+import Counterone from './components/Counterone'
+import Countertwo from './components/Countertwo'
+import UserForm from './components/UserForm'
 
 
 
@@ -49,8 +52,12 @@ function App() {
       </UserContext.Provider> */}
       {/* <DataFetchOne/> */}
       {/* <DataFetchTwo/>       not solved */}
-      <DocTitleOne />
-      <DocTitleTwo/>
+    {/* custom hooks */}
+      {/* <DocTitleOne /> */}
+      {/* <DocTitleTwo/> */}
+      {/* <Counterone/> */}
+      {/* <Countertwo/> */}
+      {/* <UserForm/>           not solved */}
     </>
   )
 }
