@@ -1,0 +1,7 @@
+useState
+
+const DeclareStateVar = () => {
+  const [count] = useState(100)
+  return <div> State variable is {count}</div>
+}
+

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useReducer, useState } from 'react'
 import './App.css'
 import Hooks1 from './components/Hooks1'
 import HookCounter from './components/HookCounter'
@@ -10,12 +10,16 @@ import IntervalHookCounter from './components/IntervalHookCounter'
 import DataFetch from './components/DataFetch'
 import ComponentA from './components/ComponentA'
 import UseReducer from './components/UseReducer'
+import CompoA from './components/CompoA'
+import DataFetchOne from './components/DataFetchOne'
+import DataFetchTwo from './components/DataFetchTwo'
+import DocTitleOne from './components/DocTitleOne'
+import DocTitleTwo from './components/DocTitleTwo'
 
-export  const UserContext = React.createContext()
-export  const ChannelContext = React.createContext()
+
 
 function App() {
-  
+
 
   return (
     <>
@@ -37,6 +41,16 @@ function App() {
       </UserContext.Provider>  */}
     {/* useReducer */}
       {/* <UseReducer/> */}
+      {/* <UserContext.Provider value={{countState : count ,countDispatch : dispatch}}>
+        count - {count    }
+        <CompoA/>
+        <CompoD/>
+        <CompoF/> 
+      </UserContext.Provider> */}
+      {/* <DataFetchOne/> */}
+      {/* <DataFetchTwo/>       not solved */}
+      <DocTitleOne />
+      <DocTitleTwo/>
     </>
   )
 }

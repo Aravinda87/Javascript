@@ -1,5 +1,4 @@
 import React, {useContext} from 'react'
-import {UserContext , ChannelContext} from '../App'
 
 function ComponentB() {
     const user = useContext(UserContext)
