@@ -4,7 +4,7 @@ const initialvalue = {
     firstvalue : 0,
     secondvalue : 10
 }
-
+ s
 const reducer = (state,action) =>{
     switch(action.type)
     {
