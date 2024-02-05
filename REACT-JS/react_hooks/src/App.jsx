@@ -8,6 +8,7 @@ import HookMouse from './components/HookMouse'
 import Mousecountainer from './components/Mousecountainer'
 import IntervalHookCounter from './components/IntervalHookCounter'
 import DataFetch from './components/DataFetch'
+import Complexreducer from './components/Complexreducer'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -25,7 +26,7 @@ function App() {
       {/* <IntervalHookCounter /> */}
       {/* <DataFetch /> */}
     {/* useContext */}
-      
+      <Complexreducer/>
     </>
   )
 }
