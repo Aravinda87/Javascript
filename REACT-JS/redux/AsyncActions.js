@@ -11,7 +11,7 @@ const axios = require('axios')
 
 const initialstate = {
     loading : false,
-    user : [] ,
+    users : [] ,
     error : ''
 }
 
@@ -26,6 +26,7 @@ const fetch_user_req = () =>{
         type : FETCH_USER_REQ
     }
 }
+
 const fetch_user_success = users =>{
     return{
         type : FETCH_USER_SUCCESS,
@@ -46,21 +47,21 @@ const reducer = (state = initialstate , action) =>{
             return{
                 ...state,
                 loading : true,
-                user : [],
+                users : [],
                 error : ''
             }
         case FETCH_USER_SUCCESS :
             return{
                 ...state,
                 loading : false,
-                user : action.payload,
+                users : action.payload,
                 error : ''
             }
         case FETCH_USER_FAILURE :
             return{
                 ...state,
                 loading : true,
-                user : [],
+                users : [],
                 error : action.payload
         }    
     }
