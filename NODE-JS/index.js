@@ -1,15 +1,15 @@
+const http = require("node:http")
 const fs = require("node:fs")
 
-const readablestream = fs.createReadStream("./file1.txt",{
-    encoding : "utf-8",
-    highWaterMark : 2,
-});
+const server = http.createServer((req,res) =>{
 
-const writeablestram = fs.createWriteStream("./file2.txt");
+    res.writeHead(200,{"content-type":"text/html"})
+    const html = fs.readFileSync("./index.html","utf-8")
+    res.end(html)
 
-readablestream.pipe(writeablestram);
+})
 
-// readablestream.on("data", (chunk) =>{
-//     console.log(chunk)
-//     writeablestram.write(chunk)
-// });
+server.listen(3000,() =>{
+        console.log("server running on 3000")
+})
+
